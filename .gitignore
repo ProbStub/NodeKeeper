@@ -1,0 +1,8 @@
+/dist/**
+/build/**
+/src/*info/**
+.idea/
+.vscode/
+.env
+.DS_Store
+*cache*
