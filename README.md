@@ -26,14 +26,14 @@ if all you want to do is write integration tests for your software
 NodeKeeper is available as a Python package. Additionally, you may choose to 
 install from source.
 
-Installation of the Pythong package:
+Installation of the Python package:
 ```
 pip install -i cl-node-keeper
 ```
 
 Installation from source:
 ```
-git clone http://github.com/nodekeeper
+git clone https://github.com/ProbStub/NodeKeeper
 ```
 
 # Examples
