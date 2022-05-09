@@ -1,0 +1,22 @@
+# Wallet code of mint owner
+PRIVATE_KEY=""
+
+# RPC API keys
+WEB3_INFURA_PROJECT_ID=""
+ETHERSCAN_TOKEN=""
+
+# Initial funding amount of collectible contract - must be enough for token amount minted
+LINK_INITIAL_FUNDING_AMOUNT="400000000000000000"
+
+# Job spec resources
+JOBS_LOCATION_ROOT="./"
+JOBS_FILE_EXTENSION="toml"
+
+# Chainlink node operation secrets & configuration
+NODE_USERID=""
+NODE_USERPW=""
+# Must be enough to pay gas for transaction response
+NODE_MIN_FUNDING_ETH="100000000000000"
+
+# Initial funding amount of oracle contract - must be enough to respond transactions at start
+ORACLE_INITIAL_FUNDING_LINK="1000000000000000000"
