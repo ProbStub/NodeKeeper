@@ -3,6 +3,10 @@ NodeKeeper is a Python wrapper to ChainLink nodes API. This allows
 you to easily create integration tests on a local development network.
 Additionally, you may use NodeKeeper to automate your node operations.
 
+![GitHub commits since latest release (by date) for a branch](https://img.shields.io/github/commits-since/Probstub/NodeKeeper/0.0.1/master)
+![GitHub branch checks state](https://img.shields.io/github/checks-status/probstub/NodeKeeper/master)
+![Codacy grade](https://img.shields.io/codacy/grade/23890bea152e49b296f411d83a85619c)
+
 # Purpose
 Testing for smart contracts that reference oracles is often tedious 
 on live chains, and slow. Yet, everyone wants to test as much as possible, 
