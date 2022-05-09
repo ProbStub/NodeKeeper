@@ -1,0 +1,46 @@
+## INFRASTRUCTURE CONFIGURATION
+# Set the below to meet your environment
+pg_user="main_admin"
+pg_host="localhost"
+pg_port="5432"
+pg_db="main_admin"
+chainlink_private_key=""
+chainlink_node_user=""
+chainlink_node_pw=""
+chainlink_node_port="6688"
+chainlink_node_db="chainlink_node"
+
+# DO NOT CHANGE - Values are updated during infrastructure build up
+chain_link_node_wallet_address=""
+pg_pw=""
+
+## BLOCKCHAIN CONFIGURATION
+# Wallet code of mint owner
+PRIVATE_KEY=""
+
+# RPC API keys
+WEB3_INFURA_PROJECT_ID=""
+ETHERSCAN_TOKEN=""
+
+# Initial funding amount of collectible contract - must be enough for token amount minted
+LINK_INITIAL_FUNDING_AMOUNT="400000000000000000"
+
+# Job spec resources
+JOBS_LOCATION_ROOT="./"
+JOBS_FILE_EXTENSION="toml"
+
+# Chainlink node operation secrets & configuration
+NODE_USERID=""
+NODE_USERPW=""
+NODE_URL="http://localhost"
+NODE_PORT="6688"
+# Must be enough to pay gas for transaction response
+NODE_MIN_FUNDING_ETH="100000000000000"
+
+# Initial funding amount of oracle contract - must be enough to respond transactions at start
+ORACLE_INITIAL_FUNDING_LINK="1000000000000000000"
+
+# Settings for online uploads and retrievals - mostly be false for test and development
+IPFS_UPLOAD="True"
+CONTRACT_UPLOAD="True"
+ABI_DOWNLOAD="True"

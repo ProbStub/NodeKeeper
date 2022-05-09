@@ -1,0 +1,23 @@
+apiVersion: "acid.zalan.do/v1"
+kind: postgresql
+metadata:
+  name: postgres-server
+  namespace: default
+  labels:
+    environment: test
+    app_name: simple_service
+    app_version: v0.0.3
+spec:
+  teamId: "postgres"
+  volume:
+    size: 15Gi
+  numberOfInstances: 3
+  users:
+    main_admin:  # database owner (must own at least one DB to login)
+    - superuser
+    - createdb
+  databases:
+    simple_service: main_admin  # dbname: owner
+    chainlink_node: main_admin
+  postgresql:
+    version: "14"

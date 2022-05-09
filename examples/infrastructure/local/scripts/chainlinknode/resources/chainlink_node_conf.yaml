@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: chainlink-node-conf
+  namespace: default
+  labels:
+    app: chainlink-node-app
+    environment: test
+    app_name: simple_service
+    app_version: v0.0.3
+data:
+  ALLOW_ORIGINS: "*"
+  CHAINLINK_TLS_PORT: "0"
+  DATABASE_TIMEOUT: "0"
+  DATABASE_URL: "INSERT-DATABASE-URL"
+  ETH_CHAIN_ID: "4"
+  ETH_URL: "INSERT-ETH-WSS"
+  LINK_CONTRACT_ADDRESS: "0x01be23585060835e02b77ef475b0cc51aa1e0709"
+  LOG_LEVEL: "debug"
+  MIN_OUTGOING_CONFIRMATIONS: "2"
+  ROOT: "/chainlink"
+  SECURE_COOKIES: "false"

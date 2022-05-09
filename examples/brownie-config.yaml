@@ -1,0 +1,38 @@
+# Declare which Solidity frameworks and template packages to load
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@3.4.0
+  - smartcontractkit/chainlink-brownie-contracts@1.0.2
+  - smartcontractkit/chainlink@1.3.0
+
+# Solidity compiler configuration, including import name mappings
+compiler:
+  solc:
+    remappings:
+      - '@openzeppelin=openzeppelin/openzeppelin-contracts@3.4.0'
+      - '@chainlink=smartcontractkit/chainlink-brownie-contracts@1.0.2'
+      - '@chainlinkoracle=smartcontractkit/chainlink@1.3.0'
+
+ # Load any secret configuration elements from the .env file
+dotenv: .env
+
+# Secret wallet configuration
+wallets:
+  from_key: ${PRIVATE_KEY}
+
+networks:
+  development:
+    vrf_coordinator: '0xb3dCcb4Cf7a26f6cf6B120Cf5A73875B7BBc655B'
+    link_token: '0x01be23585060835e02b77ef475b0cc51aa1e0709'
+    keyhash: '0x2ed0feb3e7fd2022120aa84fab1945545a9f2ffc9076fd6156fa96eaff4c1311'
+    fee: 100000000000000000
+  integration:
+    vrf_coordinator: '0xb3dCcb4Cf7a26f6cf6B120Cf5A73875B7BBc655B'
+    link_token: '0x01be23585060835e02b77ef475b0cc51aa1e0709'
+    keyhash: '0x2ed0feb3e7fd2022120aa84fab1945545a9f2ffc9076fd6156fa96eaff4c1311'
+    fee: 100000000000000000
+  rinkeby:
+    vrf_coordinator: '0xb3dCcb4Cf7a26f6cf6B120Cf5A73875B7BBc655B'
+    link_token: '0x01be23585060835e02b77ef475b0cc51aa1e0709'
+    keyhash: '0x2ed0feb3e7fd2022120aa84fab1945545a9f2ffc9076fd6156fa96eaff4c1311'
+    fee: 10000000000000000
+
