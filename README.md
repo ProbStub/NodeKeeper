@@ -1,4 +1,7 @@
 # TL;DR
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/09ef4e75e6b34a20b7945c3e1e18bb4b)](https://app.codacy.com/gh/ProbStub/NodeKeeper?utm_source=github.com&utm_medium=referral&utm_content=ProbStub/NodeKeeper&utm_campaign=Badge_Grade_Settings)
+
 NodeKeeper is a Python wrapper to ChainLink nodes API. This allows
 you to easily create integration tests on a local development network.
 Additionally, you may use NodeKeeper to automate your node operations.
